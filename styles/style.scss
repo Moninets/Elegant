@@ -1,0 +1,250 @@
+@import 'normalize.css';
+@import 'layout';
+@import 'fonts';
+
+$text-color: #fff;
+$secondary-text-color: #222222;
+
+@mixin title-font {
+	font-family: Ralewaey, sans-serif ;
+	font-weight: 700;
+}
+@mixin text-font {
+	font-family: LAto, sans-serif ;
+	font-weight: 400;
+}
+
+
+body {
+	@include text-font;
+	color: $secondary-text-color;
+}
+img {
+	width: 100%;
+}
+/* <!-- BEGIN 	HEADER  --> */
+.ba-header {
+	background: url(../images/hero.jpg) 0 0 no-repeat;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color: $text-color;
+	&__logo {
+		float: left;
+		color: $text-color;
+
+	}
+	&__title {
+		text-align: center;
+		font-size: 48px;
+		line-height: 1;
+		margin-top: 250px;
+		@include title-font;
+		text-transform: uppercase;
+		text-align: center;
+		position: relative;
+	}
+	&__title:before {
+		content: "___";
+		display: table;
+		position: absolute;
+		left: 47%;
+		top: 50px;
+	}
+	&__description {
+		font-size: 22px;
+		line-height: 1.3;
+		letter-spacing: 0.05em;
+		margin-top: 100px;
+		text-align: center;
+	}
+}
+.ba-nav {
+	margin-top: 50px;
+	&__list {
+		float: right;
+		margin-right: 70px;
+	}
+	&__item {
+		float: left;
+		margin-left: 50px;
+	}
+	&__link {
+		text-decoration: none;
+		color: $text-color;
+		text-transform: uppercase;
+		@include text-font;
+	}
+	&__link:hover {
+		opacity: .5;
+		color: red;
+	}
+}
+.ba-arrow {
+	width: 100px;
+	height: 100px;
+	margin: 345px 0 45px 275px ;
+}
+.ba-arrow:hover {
+	opacity: .5;
+	color: red;
+}
+/* AND HEADER  */
+/* BEGIN SERVICES */
+.ba-services {
+	padding-top: 115px;
+	color: $secondary-text-color;
+	@include text-font;
+	&__title {
+		margin-bottom: 160px;
+		font-size: 35px;
+		line-height: 1;
+		@include title-font;
+		position: relative;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	&__title:before {
+		content: "___";
+		display: table;
+		position: absolute;
+		left: 47%;
+		top: 80px;
+	}
+}
+.ba-services__grid {
+	margin: 80px 0 20px;
+	&--phone {
+		width: 80px;
+		height: 135px;
+	}
+	&--responsive {
+		width: 185px;
+		height: 150px;
+	}
+	&--pixel {
+		width: 120px;
+		height: 120px;
+	}
+	@mixin grid-title {
+		font-size: 24px;
+		line-height: 1;
+	}
+	&--title {
+		margin-top: 53px;
+		@include grid-title;
+	}
+	&--title1 {
+		margin-top: 40px;
+		@include grid-title
+	}
+	&--title2 {
+		margin-top: 71px;
+		@include grid-title
+	}
+	&--description {
+		margin: 40px 0 120px;
+		font-size: 16px;
+		line-height: 2;
+	}
+}
+/* AND SERVICES */
+
+/* BEGIN ABOUT */
+.ba-about {
+	background: url(../images/bg.about.jpg) 0 0 no-repeat;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color: $text-color;
+	&__title {
+		margin-top: 172px;
+		font-size: 45px;
+		line-height: 2;
+		@include text-font;
+		text-transform: uppercase;
+		letter-spacing: 0.04em;
+	}
+	&__description {
+		font-size: 22px;
+		line-height: 1.2;
+		margin-bottom: 75px;
+		font-weight: 100;
+	}
+	&__more {
+		margin-bottom: 120px;
+		color: $text-color;
+
+	}
+
+	& img {
+		float: right;
+		height: 425px;
+		width: 255px;
+		margin-top: 75px;
+		margin-right: 100px;
+	}
+}
+/*  AND ABOUT  */
+/* BEGIN WORKS */
+.ba-works {
+	position: relative;
+	&__title {
+		@include title-font;
+		margin: 120px 0 165px;
+		font-size: 35px;
+		line-height: 1.8;
+		text-transform: uppercase;
+	}
+	&__title:before {
+		content: "_____";
+		display: table;
+		position: absolute;
+		top: 80px;
+		left: 47%;
+	}
+}
+/* AND WORKS */
+/* BEGIN FOOTER */
+.ba-information {
+	background: url(../images/bg.footer.jpg) 0 0 no-repeat;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding-top: 117px;
+	position: relative;
+
+	@include title-font;
+	&__title {
+		font-size: 35px;
+		line-height: 1.8;
+		text-transform: uppercase;
+		color: $text-color;
+		margin-bottom: 140px;
+	}
+	&__title:before {
+		content: "_____";
+		display: table;
+		position: absolute;
+		left: 47%;
+		top: 220px;
+	}
+	&__list {
+
+		&__item {
+			float: right;
+			margin-right: 25px;
+			color:$text-color;
+			&__link {
+				float: left;
+
+
+			}
+		}
+	}
+}
+.ba-information-form__field {
+	background-color: transparent;
+}
+/* AND FOOTER */
+background-color:trnsperent: #FFF;

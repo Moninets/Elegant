@@ -1,0 +1,401 @@
+@import url(normalize.css);
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*use this class for block that has child floated elements*/
+.ba-clearfix:before,
+.ba-clearfix:after {
+  content: "";
+  display: table;
+}
+
+.ba-clearfix:after {
+  clear: both;
+}
+
+/*hack for IE 6/7 */
+.ba-clearfix {
+  *zoom: 1;
+}
+
+/*classes for text*/
+.ba-text-center {
+  text-align: center;
+}
+
+.ba-text-left {
+  text-align: left;
+}
+
+.ba-text-right {
+  text-align: right;
+}
+
+.ba-text-justify {
+  text-align: justify;
+}
+
+/* layout classes */
+.ba-container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.ba-float-left {
+  float: left;
+}
+
+.ba-float-right {
+  float: right;
+}
+
+/* ba grid defination */
+/*use this class for block that has child floated elements*/
+.ba-grid:before,
+.ba-grid:after {
+  content: "";
+  display: table;
+}
+
+.ba-grid:after {
+  clear: both;
+}
+
+/* hack for IE 6/7 */
+.ba-grid {
+  *zoom: 1;
+}
+
+.ba-grid {
+  margin: 0 -15px;
+}
+
+.ba-grid > [class*="ba-column-"] {
+  padding: 0 15px;
+}
+
+.ba-grid + .ba-grid {
+  margin-top: 30px;
+}
+
+[class*="ba-column-"] {
+  float: left;
+}
+
+.ba-column-12 {
+  width: 100%;
+}
+
+.ba-column-11 {
+  width: 91.667%;
+}
+
+.ba-column-10 {
+  width: 83.334%;
+}
+
+.ba-column-9 {
+  width: 75%;
+}
+
+.ba-column-8 {
+  width: 66.667%;
+}
+
+.ba-column-7 {
+  width: 58.33333333%;
+}
+
+.ba-column-6 {
+  width: 50%;
+}
+
+.ba-column-5 {
+  width: 41.66666667%;
+}
+
+.ba-column-4 {
+  width: 33.334%;
+}
+
+.ba-column-3 {
+  width: 25%;
+}
+
+.ba-column-2 {
+  width: 16.667%;
+}
+
+.ba-column-1 {
+  width: 8.334%;
+}
+
+body {
+  font-family: LAto, sans-serif;
+  font-weight: 400;
+  color: #222222;
+}
+
+img {
+  width: 100%;
+}
+
+/* <!-- BEGIN 	HEADER  --> */
+.ba-header {
+  background: url(../images/hero.jpg) 0 0 no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #fff;
+}
+
+.ba-header__logo {
+  float: left;
+  color: #fff;
+}
+
+.ba-header__title {
+  text-align: center;
+  font-size: 48px;
+  line-height: 1;
+  margin-top: 250px;
+  font-family: Ralewaey, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+}
+
+.ba-header__title:before {
+  content: "___";
+  display: table;
+  position: absolute;
+  left: 47%;
+  top: 50px;
+}
+
+.ba-header__description {
+  font-size: 22px;
+  line-height: 1.3;
+  letter-spacing: 0.05em;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.ba-nav {
+  margin-top: 50px;
+}
+
+.ba-nav__list {
+  float: right;
+  margin-right: 70px;
+}
+
+.ba-nav__item {
+  float: left;
+  margin-left: 50px;
+}
+
+.ba-nav__link {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: LAto, sans-serif;
+  font-weight: 400;
+}
+
+.ba-nav__link:hover {
+  opacity: .5;
+  color: red;
+}
+
+.ba-arrow {
+  width: 100px;
+  height: 100px;
+  margin: 345px 0 45px 275px;
+}
+
+.ba-arrow:hover {
+  opacity: .5;
+  color: red;
+}
+
+/* AND HEADER  */
+/* BEGIN SERVICES */
+.ba-services {
+  padding-top: 115px;
+  color: #222222;
+  font-family: LAto, sans-serif;
+  font-weight: 400;
+}
+
+.ba-services__title {
+  margin-bottom: 160px;
+  font-size: 35px;
+  line-height: 1;
+  font-family: Ralewaey, sans-serif;
+  font-weight: 700;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.ba-services__title:before {
+  content: "___";
+  display: table;
+  position: absolute;
+  left: 47%;
+  top: 80px;
+}
+
+.ba-services__grid {
+  margin: 80px 0 20px;
+}
+
+.ba-services__grid--phone {
+  width: 80px;
+  height: 135px;
+}
+
+.ba-services__grid--responsive {
+  width: 185px;
+  height: 150px;
+}
+
+.ba-services__grid--pixel {
+  width: 120px;
+  height: 120px;
+}
+
+.ba-services__grid--title {
+  margin-top: 53px;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.ba-services__grid--title1 {
+  margin-top: 40px;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.ba-services__grid--title2 {
+  margin-top: 71px;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.ba-services__grid--description {
+  margin: 40px 0 120px;
+  font-size: 16px;
+  line-height: 2;
+}
+
+/* AND SERVICES */
+/* BEGIN ABOUT */
+.ba-about {
+  background: url(../images/bg.about.jpg) 0 0 no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #fff;
+}
+
+.ba-about__title {
+  margin-top: 172px;
+  font-size: 45px;
+  line-height: 2;
+  font-family: LAto, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.ba-about__description {
+  font-size: 22px;
+  line-height: 1.2;
+  margin-bottom: 75px;
+  font-weight: 100;
+}
+
+.ba-about__more {
+  margin-bottom: 120px;
+  color: #fff;
+}
+
+.ba-about img {
+  float: right;
+  height: 425px;
+  width: 255px;
+  margin-top: 75px;
+  margin-right: 100px;
+}
+
+/*  AND ABOUT  */
+/* BEGIN WORKS */
+.ba-works {
+  position: relative;
+}
+
+.ba-works__title {
+  font-family: Ralewaey, sans-serif;
+  font-weight: 700;
+  margin: 120px 0 165px;
+  font-size: 35px;
+  line-height: 1.8;
+  text-transform: uppercase;
+}
+
+.ba-works__title:before {
+  content: "_____";
+  display: table;
+  position: absolute;
+  top: 80px;
+  left: 47%;
+}
+
+/* AND WORKS */
+/* BEGIN FOOTER */
+.ba-information {
+  background: url(../images/bg.footer.jpg) 0 0 no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 117px;
+  position: relative;
+  font-family: Ralewaey, sans-serif;
+  font-weight: 700;
+}
+
+.ba-information__title {
+  font-size: 35px;
+  line-height: 1.8;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 140px;
+}
+
+.ba-information__title:before {
+  content: "_____";
+  display: table;
+  position: absolute;
+  left: 47%;
+  top: 220px;
+}
+
+.ba-information__list__item {
+  float: right;
+  margin-right: 25px;
+  color: #fff;
+}
+
+.ba-information__list__item__link {
+  float: left;
+}
+
+/* AND FOOTER */
